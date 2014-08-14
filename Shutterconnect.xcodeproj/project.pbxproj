@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1EDB800F1F7B8004C2BF77CF /* UploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDB89A26D4B9A9CD4199F53 /* UploadViewController.m */; };
+		1EDB8379A34CC65D806975D4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1EDB89C07928BD4E4493357A /* Localizable.strings */; };
+		1EDB85D597AAC2C3D4A7578A /* FiltersManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDB8F88ADDFDED8482B8434 /* FiltersManager.m */; };
+		86164CB7199D44F600B3DDDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86164CB6199D44F600B3DDDD /* Foundation.framework */; };
+		86164CB9199D44F600B3DDDD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86164CB8199D44F600B3DDDD /* CoreGraphics.framework */; };
+		86164CBB199D44F600B3DDDD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86164CBA199D44F600B3DDDD /* UIKit.framework */; };
+		86164CC1199D44F600B3DDDD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86164CBF199D44F600B3DDDD /* InfoPlist.strings */; };
+		86164CC3199D44F600B3DDDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86164CC2199D44F600B3DDDD /* main.m */; };
+		86164CC7199D44F600B3DDDD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86164CC6199D44F600B3DDDD /* AppDelegate.m */; };
+		86164CCA199D44F600B3DDDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86164CC8199D44F600B3DDDD /* Main.storyboard */; };
+		86164CCF199D44F600B3DDDD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86164CCE199D44F600B3DDDD /* Images.xcassets */; };
+		86164CD6199D44F600B3DDDD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86164CD5199D44F600B3DDDD /* XCTest.framework */; };
+		86164CD7199D44F600B3DDDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86164CB6199D44F600B3DDDD /* Foundation.framework */; };
+		86164CD8199D44F600B3DDDD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86164CBA199D44F600B3DDDD /* UIKit.framework */; };
+		86164CE0199D44F600B3DDDD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86164CDE199D44F600B3DDDD /* InfoPlist.strings */; };
+		86164CE2199D44F600B3DDDD /* ShutterconnectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86164CE1199D44F600B3DDDD /* ShutterconnectTests.m */; };
+		86164CF1199D484100B3DDDD /* UploadsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86164CF0199D484100B3DDDD /* UploadsViewController.m */; };
+		C9EA79C2D6934A048DC77BA3 /* libPods-Shutterconnect.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB574D4444F4A0980F8A51C /* libPods-Shutterconnect.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		86164CD9199D44F600B3DDDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86164CAB199D44F600B3DDDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86164CB2199D44F600B3DDDD;
+			remoteInfo = Shutterconnect;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1EDB866C072C455B28701C90 /* FiltersManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiltersManager.h; sourceTree = "<group>"; };
+		1EDB86BA8B69FF4EF69CD469 /* UploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadViewController.h; sourceTree = "<group>"; };
+		1EDB89A26D4B9A9CD4199F53 /* UploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadViewController.m; sourceTree = "<group>"; };
+		1EDB89C07928BD4E4493357A /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		1EDB8F88ADDFDED8482B8434 /* FiltersManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiltersManager.m; sourceTree = "<group>"; };
+		2DB574D4444F4A0980F8A51C /* libPods-Shutterconnect.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Shutterconnect.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		86164CB3199D44F600B3DDDD /* Shutterconnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shutterconnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		86164CB6199D44F600B3DDDD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		86164CB8199D44F600B3DDDD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		86164CBA199D44F600B3DDDD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		86164CBE199D44F600B3DDDD /* Shutterconnect-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Shutterconnect-Info.plist"; sourceTree = "<group>"; };
+		86164CC0199D44F600B3DDDD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		86164CC2199D44F600B3DDDD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		86164CC4199D44F600B3DDDD /* Shutterconnect-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Shutterconnect-Prefix.pch"; sourceTree = "<group>"; };
+		86164CC5199D44F600B3DDDD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		86164CC6199D44F600B3DDDD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		86164CC9199D44F600B3DDDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		86164CCE199D44F600B3DDDD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		86164CD4199D44F600B3DDDD /* ShutterconnectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShutterconnectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		86164CD5199D44F600B3DDDD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		86164CDD199D44F600B3DDDD /* ShutterconnectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ShutterconnectTests-Info.plist"; sourceTree = "<group>"; };
+		86164CDF199D44F600B3DDDD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		86164CE1199D44F600B3DDDD /* ShutterconnectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShutterconnectTests.m; sourceTree = "<group>"; };
+		86164CEF199D484100B3DDDD /* UploadsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadsViewController.h; sourceTree = "<group>"; };
+		86164CF0199D484100B3DDDD /* UploadsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadsViewController.m; sourceTree = "<group>"; };
+		FD603AA13FFA4937B029DD90 /* Pods-Shutterconnect.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shutterconnect.xcconfig"; path = "Pods/Pods-Shutterconnect.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		86164CB0199D44F600B3DDDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86164CB9199D44F600B3DDDD /* CoreGraphics.framework in Frameworks */,
+				86164CBB199D44F600B3DDDD /* UIKit.framework in Frameworks */,
+				86164CB7199D44F600B3DDDD /* Foundation.framework in Frameworks */,
+				C9EA79C2D6934A048DC77BA3 /* libPods-Shutterconnect.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86164CD1199D44F600B3DDDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86164CD6199D44F600B3DDDD /* XCTest.framework in Frameworks */,
+				86164CD8199D44F600B3DDDD /* UIKit.framework in Frameworks */,
+				86164CD7199D44F600B3DDDD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EDB8C0B26A38D70673277F0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1EDB89C07928BD4E4493357A /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		86164CAA199D44F600B3DDDD = {
+			isa = PBXGroup;
+			children = (
+				86164CBC199D44F600B3DDDD /* Shutterconnect */,
+				86164CDB199D44F600B3DDDD /* ShutterconnectTests */,
+				86164CB5199D44F600B3DDDD /* Frameworks */,
+				86164CB4199D44F600B3DDDD /* Products */,
+				FD603AA13FFA4937B029DD90 /* Pods-Shutterconnect.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		86164CB4199D44F600B3DDDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				86164CB3199D44F600B3DDDD /* Shutterconnect.app */,
+				86164CD4199D44F600B3DDDD /* ShutterconnectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		86164CB5199D44F600B3DDDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86164CB6199D44F600B3DDDD /* Foundation.framework */,
+				86164CB8199D44F600B3DDDD /* CoreGraphics.framework */,
+				86164CBA199D44F600B3DDDD /* UIKit.framework */,
+				86164CD5199D44F600B3DDDD /* XCTest.framework */,
+				2DB574D4444F4A0980F8A51C /* libPods-Shutterconnect.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		86164CBC199D44F600B3DDDD /* Shutterconnect */ = {
+			isa = PBXGroup;
+			children = (
+				86164CEB199D458000B3DDDD /* Classes */,
+				86164CC5199D44F600B3DDDD /* AppDelegate.h */,
+				86164CC6199D44F600B3DDDD /* AppDelegate.m */,
+				86164CC8199D44F600B3DDDD /* Main.storyboard */,
+				86164CCE199D44F600B3DDDD /* Images.xcassets */,
+				86164CBD199D44F600B3DDDD /* Supporting Files */,
+				1EDB8C0B26A38D70673277F0 /* Resources */,
+			);
+			path = Shutterconnect;
+			sourceTree = "<group>";
+		};
+		86164CBD199D44F600B3DDDD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				86164CBE199D44F600B3DDDD /* Shutterconnect-Info.plist */,
+				86164CBF199D44F600B3DDDD /* InfoPlist.strings */,
+				86164CC2199D44F600B3DDDD /* main.m */,
+				86164CC4199D44F600B3DDDD /* Shutterconnect-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		86164CDB199D44F600B3DDDD /* ShutterconnectTests */ = {
+			isa = PBXGroup;
+			children = (
+				86164CE1199D44F600B3DDDD /* ShutterconnectTests.m */,
+				86164CDC199D44F600B3DDDD /* Supporting Files */,
+			);
+			path = ShutterconnectTests;
+			sourceTree = "<group>";
+		};
+		86164CDC199D44F600B3DDDD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				86164CDD199D44F600B3DDDD /* ShutterconnectTests-Info.plist */,
+				86164CDE199D44F600B3DDDD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		86164CEB199D458000B3DDDD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				86164CEF199D484100B3DDDD /* UploadsViewController.h */,
+				86164CF0199D484100B3DDDD /* UploadsViewController.m */,
+				1EDB89A26D4B9A9CD4199F53 /* UploadViewController.m */,
+				1EDB86BA8B69FF4EF69CD469 /* UploadViewController.h */,
+				1EDB8F88ADDFDED8482B8434 /* FiltersManager.m */,
+				1EDB866C072C455B28701C90 /* FiltersManager.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		86164CB2199D44F600B3DDDD /* Shutterconnect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86164CE5199D44F600B3DDDD /* Build configuration list for PBXNativeTarget "Shutterconnect" */;
+			buildPhases = (
+				96E9CD8E17414EE1B3CD9C8A /* Check Pods Manifest.lock */,
+				86164CAF199D44F600B3DDDD /* Sources */,
+				86164CB0199D44F600B3DDDD /* Frameworks */,
+				86164CB1199D44F600B3DDDD /* Resources */,
+				1C84B62702914A339C0972F7 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shutterconnect;
+			productName = Shutterconnect;
+			productReference = 86164CB3199D44F600B3DDDD /* Shutterconnect.app */;
+			productType = "com.apple.product-type.application";
+		};
+		86164CD3199D44F600B3DDDD /* ShutterconnectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86164CE8199D44F600B3DDDD /* Build configuration list for PBXNativeTarget "ShutterconnectTests" */;
+			buildPhases = (
+				86164CD0199D44F600B3DDDD /* Sources */,
+				86164CD1199D44F600B3DDDD /* Frameworks */,
+				86164CD2199D44F600B3DDDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86164CDA199D44F600B3DDDD /* PBXTargetDependency */,
+			);
+			name = ShutterconnectTests;
+			productName = ShutterconnectTests;
+			productReference = 86164CD4199D44F600B3DDDD /* ShutterconnectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		86164CAB199D44F600B3DDDD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Lukasz Warchol";
+				TargetAttributes = {
+					86164CD3199D44F600B3DDDD = {
+						TestTargetID = 86164CB2199D44F600B3DDDD;
+					};
+				};
+			};
+			buildConfigurationList = 86164CAE199D44F600B3DDDD /* Build configuration list for PBXProject "Shutterconnect" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 86164CAA199D44F600B3DDDD;
+			productRefGroup = 86164CB4199D44F600B3DDDD /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+			);
+			projectRoot = "";
+			targets = (
+				86164CB2199D44F600B3DDDD /* Shutterconnect */,
+				86164CD3199D44F600B3DDDD /* ShutterconnectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		86164CB1199D44F600B3DDDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86164CCF199D44F600B3DDDD /* Images.xcassets in Resources */,
+				86164CC1199D44F600B3DDDD /* InfoPlist.strings in Resources */,
+				86164CCA199D44F600B3DDDD /* Main.storyboard in Resources */,
+				1EDB8379A34CC65D806975D4 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86164CD2199D44F600B3DDDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86164CE0199D44F600B3DDDD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C84B62702914A339C0972F7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-Shutterconnect-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96E9CD8E17414EE1B3CD9C8A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		86164CAF199D44F600B3DDDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86164CC7199D44F600B3DDDD /* AppDelegate.m in Sources */,
+				86164CC3199D44F600B3DDDD /* main.m in Sources */,
+				86164CF1199D484100B3DDDD /* UploadsViewController.m in Sources */,
+				1EDB800F1F7B8004C2BF77CF /* UploadViewController.m in Sources */,
+				1EDB85D597AAC2C3D4A7578A /* FiltersManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86164CD0199D44F600B3DDDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86164CE2199D44F600B3DDDD /* ShutterconnectTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		86164CDA199D44F600B3DDDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86164CB2199D44F600B3DDDD /* Shutterconnect */;
+			targetProxy = 86164CD9199D44F600B3DDDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		86164CBF199D44F600B3DDDD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86164CC0199D44F600B3DDDD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		86164CC8199D44F600B3DDDD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86164CC9199D44F600B3DDDD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		86164CDE199D44F600B3DDDD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86164CDF199D44F600B3DDDD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		86164CE3199D44F600B3DDDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		86164CE4199D44F600B3DDDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		86164CE6199D44F600B3DDDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD603AA13FFA4937B029DD90 /* Pods-Shutterconnect.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Shutterconnect/Shutterconnect-Prefix.pch";
+				INFOPLIST_FILE = "Shutterconnect/Shutterconnect-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		86164CE7199D44F600B3DDDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD603AA13FFA4937B029DD90 /* Pods-Shutterconnect.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Shutterconnect/Shutterconnect-Prefix.pch";
+				INFOPLIST_FILE = "Shutterconnect/Shutterconnect-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		86164CE9199D44F600B3DDDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Shutterconnect.app/Shutterconnect";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Shutterconnect/Shutterconnect-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ShutterconnectTests/ShutterconnectTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		86164CEA199D44F600B3DDDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Shutterconnect.app/Shutterconnect";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Shutterconnect/Shutterconnect-Prefix.pch";
+				INFOPLIST_FILE = "ShutterconnectTests/ShutterconnectTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		86164CAE199D44F600B3DDDD /* Build configuration list for PBXProject "Shutterconnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86164CE3199D44F600B3DDDD /* Debug */,
+				86164CE4199D44F600B3DDDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86164CE5199D44F600B3DDDD /* Build configuration list for PBXNativeTarget "Shutterconnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86164CE6199D44F600B3DDDD /* Debug */,
+				86164CE7199D44F600B3DDDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		86164CE8199D44F600B3DDDD /* Build configuration list for PBXNativeTarget "ShutterconnectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86164CE9199D44F600B3DDDD /* Debug */,
+				86164CEA199D44F600B3DDDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 86164CAB199D44F600B3DDDD /* Project object */;
+}

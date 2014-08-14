@@ -1,0 +1,17 @@
+PODS:
+  - BlocksKit/Core (2.2.3)
+  - BlocksKit/DynamicDelegate (2.2.3)
+  - BlocksKit/UIKit (2.2.3):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - UIImage-Resize (1.0.1)
+
+DEPENDENCIES:
+  - BlocksKit/UIKit (~> 2.2.3)
+  - UIImage-Resize
+
+SPEC CHECKSUMS:
+  BlocksKit: 07c8a80f04275efac6a5f8b973782489c083a182
+  UIImage-Resize: fc57263eed2cd98f74e5ba4848bedae979a0bdf0
+
+COCOAPODS: 0.33.1
