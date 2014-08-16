@@ -6,6 +6,6 @@
 
 @protocol ImageUploader <NSObject>
 
-- (void)uploadImage:(UIImage *)image withCompletion:(void(^)(BOOL success))completion;
+- (void)uploadImage:(UIImage *)image withCompletion:(void (^)(BOOL success))completion;
 
 @end

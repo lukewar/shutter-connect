@@ -2,6 +2,7 @@
 // Copyright (c) 2014 Lukasz Warchol. All rights reserved.
 //
 
+#import <PromiseKit/Promise.h>
 #import "FiltersApplier.h"
 
 
@@ -28,6 +29,20 @@
                                                   orientation:sourceImage.imageOrientation];
     CGImageRelease(imgRef);
     return filteredImage;
+}
+
+- (void)applyFilters:(NSArray *)filters toImage:(UIImage *)sourceImage withCompletion:(void (^)(UIImage *))completion
+{
+    WEAK_SELF
+    dispatch_async(dispatch_get_global_queue(2, 0), ^{
+        typeof(self) strongSelf = weakSelf;
+        UIImage *filteredImage = [strongSelf applyFilters:filters toImage:sourceImage];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (completion) {
+                completion(filteredImage);
+            }
+        });
+    });
 }
 
 @end

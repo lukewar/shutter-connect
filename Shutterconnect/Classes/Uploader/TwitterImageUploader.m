@@ -7,6 +7,7 @@
 #import "Promise.h"
 #import "SLRequest+PromiseKit.h"
 #import <Accounts/Accounts.h>
+#import <UIImage-Resize/UIImage+Resize.h>
 
 
 @interface TwitterImageUploader ()
@@ -36,7 +37,11 @@
         if (account == nil) {
             @throw @"No Twitter accounts found.";
         }
-        return [strongSelf _promiseForUploadImage:image forAccount:account];
+
+        // Resize image due to Twitter's limits.
+        UIImage *imageToUpload = [image resizedImageToSize:CGSizeMake(image.size.width/4, image.size.height/4)];
+
+        return [strongSelf _promiseForUploadImage:imageToUpload forAccount:account];
     }).then(^(NSHTTPURLResponse *uploadResponse) {
         completion(YES);
     }).catch(^(NSError *error) {

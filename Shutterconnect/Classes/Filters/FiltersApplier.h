@@ -9,4 +9,6 @@
 
 - (UIImage *)applyFilters:(NSArray *)filters toImage:(UIImage *)sourceImage;
 
+- (void)applyFilters:(NSArray *)filters toImage:(UIImage *)sourceImage withCompletion:(void (^)(UIImage *))completion;
+
 @end

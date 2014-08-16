@@ -8,6 +8,8 @@
 #import "TwitterImageUploader.h"
 #import "ProgressHUD.h"
 #import "FiltersApplier.h"
+#import "Promise.h"
+#import "FiltersApplier+PromiseKit.h"
 
 NSString *const UploadViewControllerIdentifier = @"UploadViewControllerIdentifier";
 
@@ -73,15 +75,18 @@ NSString *const UploadViewControllerIdentifier = @"UploadViewControllerIdentifie
 {
     WEAK_SELF
     [ProgressHUD show:NSLocalizedString(@"Uploading...", @"Uploading...")];
-    [__imageUploader uploadImage:self.imageView.image
-                  withCompletion:^(BOOL success) {
-        if (success) {
-            [ProgressHUD showSuccess:NSLocalizedString(@"Completed", @"Completed") Interaction:YES];
-            [weakSelf.navigationController popViewControllerAnimated:YES];
-        } else {
-            [ProgressHUD showError:NSLocalizedString(@"Failed", @"Failed")];
-        }
-    }];
+    PMKPromise *promise = [self._filtersApplier promiseForApplyFilters:self._filtersManager.selectedFilters
+                                                               toImage:self.originalImage];
+    promise.then(^(UIImage *filteredImage) {
+        [weakSelf._imageUploader uploadImage:filteredImage withCompletion:^(BOOL success) {
+            if (success) {
+                [ProgressHUD showSuccess:NSLocalizedString(@"Completed", @"Completed") Interaction:YES];
+                [weakSelf.navigationController popViewControllerAnimated:YES];
+            } else {
+                [ProgressHUD showError:NSLocalizedString(@"Failed", @"Failed")];
+            }
+        }];
+    });
 }
 
 #pragma mark - 

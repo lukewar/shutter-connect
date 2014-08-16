@@ -10,6 +10,7 @@
 		1EDB800F1F7B8004C2BF77CF /* UploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDB89A26D4B9A9CD4199F53 /* UploadViewController.m */; };
 		1EDB8379A34CC65D806975D4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1EDB89C07928BD4E4493357A /* Localizable.strings */; };
 		1EDB8380574B31AABFE5CE79 /* TwitterImageUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDB8E274FBD06E4B9E19033 /* TwitterImageUploader.m */; };
+		1EDB879DFA617A67A0C4E047 /* FiltersApplier+PromiseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDB840804868AE4FACA3DDA /* FiltersApplier+PromiseKit.m */; };
 		1EDB8B139F2EA2A0C18E091E /* FiltersManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDB808C35ABE64A0F21712F /* FiltersManager.m */; };
 		1EDB8B6363A21695C522CB02 /* FiltersApplier.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDB86D2B29BC6F160B3EB5C /* FiltersApplier.m */; };
 		86164CB7199D44F600B3DDDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86164CB6199D44F600B3DDDD /* Foundation.framework */; };
@@ -43,6 +44,8 @@
 /* Begin PBXFileReference section */
 		1EDB80441766CA65A1106BF9 /* ImageUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageUploader.h; sourceTree = "<group>"; };
 		1EDB808C35ABE64A0F21712F /* FiltersManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiltersManager.m; sourceTree = "<group>"; };
+		1EDB81BC16277CD2419AFB22 /* FiltersApplier+PromiseKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FiltersApplier+PromiseKit.h"; sourceTree = "<group>"; };
+		1EDB840804868AE4FACA3DDA /* FiltersApplier+PromiseKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FiltersApplier+PromiseKit.m"; sourceTree = "<group>"; };
 		1EDB86BA8B69FF4EF69CD469 /* UploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadViewController.h; sourceTree = "<group>"; };
 		1EDB86D2B29BC6F160B3EB5C /* FiltersApplier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiltersApplier.m; sourceTree = "<group>"; };
 		1EDB87DB1C7B5B061BCC54B6 /* FiltersManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiltersManager.h; sourceTree = "<group>"; };
@@ -108,6 +111,8 @@
 				1EDB87DB1C7B5B061BCC54B6 /* FiltersManager.h */,
 				1EDB86D2B29BC6F160B3EB5C /* FiltersApplier.m */,
 				1EDB897701675BE72F1BC5E5 /* FiltersApplier.h */,
+				1EDB840804868AE4FACA3DDA /* FiltersApplier+PromiseKit.m */,
+				1EDB81BC16277CD2419AFB22 /* FiltersApplier+PromiseKit.h */,
 			);
 			path = Filters;
 			sourceTree = "<group>";
@@ -359,6 +364,7 @@
 				1EDB8380574B31AABFE5CE79 /* TwitterImageUploader.m in Sources */,
 				1EDB8B139F2EA2A0C18E091E /* FiltersManager.m in Sources */,
 				1EDB8B6363A21695C522CB02 /* FiltersApplier.m in Sources */,
+				1EDB879DFA617A67A0C4E047 /* FiltersApplier+PromiseKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

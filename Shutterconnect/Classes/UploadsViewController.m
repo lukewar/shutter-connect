@@ -23,8 +23,10 @@
     imagePickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     imagePickerController.bk_didFinishPickingMediaBlock = ^(UIImagePickerController *controller, NSDictionary *dictionary) {
 
-        UploadViewController*uploadViewController = [self.storyboard instantiateViewControllerWithIdentifier:UploadViewControllerIdentifier];
-        uploadViewController.originalImage = dictionary[UIImagePickerControllerOriginalImage];
+        UIImage *pickedImage = dictionary[UIImagePickerControllerOriginalImage];
+
+        UploadViewController *uploadViewController = [self.storyboard instantiateViewControllerWithIdentifier:UploadViewControllerIdentifier];
+        uploadViewController.originalImage = pickedImage;
         [weakSelf.navigationController pushViewController:uploadViewController animated:NO];
 
         [controller dismissViewControllerAnimated:YES completion:nil];
@@ -34,16 +36,5 @@
     };
     [self presentViewController:imagePickerController animated:YES completion:nil];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
