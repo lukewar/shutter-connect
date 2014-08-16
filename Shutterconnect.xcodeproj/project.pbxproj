@@ -10,9 +10,11 @@
 		1EDB800F1F7B8004C2BF77CF /* UploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDB89A26D4B9A9CD4199F53 /* UploadViewController.m */; };
 		1EDB8379A34CC65D806975D4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1EDB89C07928BD4E4493357A /* Localizable.strings */; };
 		1EDB8380574B31AABFE5CE79 /* TwitterImageUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDB8E274FBD06E4B9E19033 /* TwitterImageUploader.m */; };
+		1EDB86F9AB4033D196C3190D /* ImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDB865A8D24284488061035 /* ImageCollectionViewCell.m */; };
 		1EDB879DFA617A67A0C4E047 /* FiltersApplier+PromiseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDB840804868AE4FACA3DDA /* FiltersApplier+PromiseKit.m */; };
 		1EDB8B139F2EA2A0C18E091E /* FiltersManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDB808C35ABE64A0F21712F /* FiltersManager.m */; };
 		1EDB8B6363A21695C522CB02 /* FiltersApplier.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDB86D2B29BC6F160B3EB5C /* FiltersApplier.m */; };
+		1EDB8B785FB6C30A81450DAE /* ImagesStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDB87A7B3C62110254F28E7 /* ImagesStorage.m */; };
 		86164CB7199D44F600B3DDDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86164CB6199D44F600B3DDDD /* Foundation.framework */; };
 		86164CB9199D44F600B3DDDD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86164CB8199D44F600B3DDDD /* CoreGraphics.framework */; };
 		86164CBB199D44F600B3DDDD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86164CBA199D44F600B3DDDD /* UIKit.framework */; };
@@ -46,13 +48,17 @@
 		1EDB808C35ABE64A0F21712F /* FiltersManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiltersManager.m; sourceTree = "<group>"; };
 		1EDB81BC16277CD2419AFB22 /* FiltersApplier+PromiseKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FiltersApplier+PromiseKit.h"; sourceTree = "<group>"; };
 		1EDB840804868AE4FACA3DDA /* FiltersApplier+PromiseKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FiltersApplier+PromiseKit.m"; sourceTree = "<group>"; };
+		1EDB865A8D24284488061035 /* ImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCollectionViewCell.m; sourceTree = "<group>"; };
 		1EDB86BA8B69FF4EF69CD469 /* UploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadViewController.h; sourceTree = "<group>"; };
 		1EDB86D2B29BC6F160B3EB5C /* FiltersApplier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiltersApplier.m; sourceTree = "<group>"; };
+		1EDB87A38E23478FE54FE56D /* ImagesStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagesStorage.h; sourceTree = "<group>"; };
+		1EDB87A7B3C62110254F28E7 /* ImagesStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagesStorage.m; sourceTree = "<group>"; };
 		1EDB87DB1C7B5B061BCC54B6 /* FiltersManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiltersManager.h; sourceTree = "<group>"; };
 		1EDB88F498D7913217C21715 /* TwitterImageUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterImageUploader.h; sourceTree = "<group>"; };
 		1EDB897701675BE72F1BC5E5 /* FiltersApplier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiltersApplier.h; sourceTree = "<group>"; };
 		1EDB89A26D4B9A9CD4199F53 /* UploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadViewController.m; sourceTree = "<group>"; };
 		1EDB89C07928BD4E4493357A /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		1EDB8C954C0DE23C68502948 /* ImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCollectionViewCell.h; sourceTree = "<group>"; };
 		1EDB8E274FBD06E4B9E19033 /* TwitterImageUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterImageUploader.m; sourceTree = "<group>"; };
 		2DB574D4444F4A0980F8A51C /* libPods-Shutterconnect.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Shutterconnect.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		86164CB3199D44F600B3DDDD /* Shutterconnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shutterconnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -220,6 +226,10 @@
 				1EDB86BA8B69FF4EF69CD469 /* UploadViewController.h */,
 				1EDB8EC5F180B8E499201D46 /* Uploader */,
 				1EDB8A700AD6BA13F7167EA5 /* Filters */,
+				1EDB87A7B3C62110254F28E7 /* ImagesStorage.m */,
+				1EDB87A38E23478FE54FE56D /* ImagesStorage.h */,
+				1EDB865A8D24284488061035 /* ImageCollectionViewCell.m */,
+				1EDB8C954C0DE23C68502948 /* ImageCollectionViewCell.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -365,6 +375,8 @@
 				1EDB8B139F2EA2A0C18E091E /* FiltersManager.m in Sources */,
 				1EDB8B6363A21695C522CB02 /* FiltersApplier.m in Sources */,
 				1EDB879DFA617A67A0C4E047 /* FiltersApplier+PromiseKit.m in Sources */,
+				1EDB8B785FB6C30A81450DAE /* ImagesStorage.m in Sources */,
+				1EDB86F9AB4033D196C3190D /* ImageCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

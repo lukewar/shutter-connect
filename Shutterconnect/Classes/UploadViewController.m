@@ -81,12 +81,17 @@ NSString *const UploadViewControllerIdentifier = @"UploadViewControllerIdentifie
         [weakSelf._imageUploader uploadImage:filteredImage withCompletion:^(BOOL success) {
             if (success) {
                 [ProgressHUD showSuccess:NSLocalizedString(@"Completed", @"Completed") Interaction:YES];
-                [weakSelf.navigationController popViewControllerAnimated:YES];
+                [weakSelf.delegate uploadViewController:weakSelf didUploadImage:filteredImage];
             } else {
                 [ProgressHUD showError:NSLocalizedString(@"Failed", @"Failed")];
             }
         }];
     });
+}
+
+- (IBAction)didTapCancelButton:(id)didTapSendButton
+{
+    [self.delegate uploadViewControllerDidCancel:self];
 }
 
 #pragma mark - 

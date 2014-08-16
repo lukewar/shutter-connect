@@ -39,7 +39,7 @@
         }
 
         // Resize image due to Twitter's limits.
-        UIImage *imageToUpload = [image resizedImageToSize:CGSizeMake(image.size.width/4, image.size.height/4)];
+        UIImage *imageToUpload = [image resizedImageToFitInSize:CGSizeMake(image.size.width/4, image.size.height/4) scaleIfSmaller:YES];
 
         return [strongSelf _promiseForUploadImage:imageToUpload forAccount:account];
     }).then(^(NSHTTPURLResponse *uploadResponse) {
