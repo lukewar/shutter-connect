@@ -4,6 +4,9 @@
 target "Shutterconnect" do
 	pod 'BlocksKit/UIKit', '~> 2.2.3'
 	pod 'UIImage-Resize'
+	pod 'PromiseKit/Social'
+	pod 'PromiseKit/ACAccountStore'
+	pod 'ProgressHUD'
 end
 
 target "ShutterconnectTests" do
