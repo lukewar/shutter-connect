@@ -7,6 +7,6 @@
 
 @interface FiltersManager : NSObject <UITableViewDelegate, UITableViewDataSource>
 
-@property(nonatomic, strong) NSArray *selectedFilters;
+@property(nonatomic, strong, readonly) NSArray *selectedFilters;
 
 @end

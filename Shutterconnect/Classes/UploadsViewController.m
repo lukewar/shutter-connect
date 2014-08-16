@@ -1,5 +1,5 @@
 //
-//  Copyright (c) 2014 Lukasz Warchol. All rights reserved.
+// Copyright (c) 2014 Lukasz Warchol. All rights reserved.
 //
 
 #import "UploadsViewController.h"

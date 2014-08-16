@@ -5,21 +5,26 @@
 #import "UploadViewController.h"
 #import "FiltersManager.h"
 #import "UIImage+Resize.h"
+#import "TwitterImageUploader.h"
+#import "ProgressHUD.h"
+#import "FiltersApplier.h"
 
 NSString *const UploadViewControllerIdentifier = @"UploadViewControllerIdentifier";
 
 @interface UploadViewController ()
+@property(nonatomic, strong) UIImage *_previewOriginalImage;
 
 @property(nonatomic, strong) IBOutlet UIImageView *imageView;
 @property(nonatomic, strong) IBOutlet UITableView *tableView;
 
-@property(nonatomic, strong) UIImage *_previewOriginalImage;
 @property(nonatomic, strong) FiltersManager *_filtersManager;
+@property(nonatomic, strong) FiltersApplier *_filtersApplier;
+
+@property(nonatomic, strong) id <ImageUploader> _imageUploader;
 
 @end
 
 @implementation UploadViewController
-
 
 
 #pragma mark - Lifecycle
@@ -29,9 +34,11 @@ NSString *const UploadViewControllerIdentifier = @"UploadViewControllerIdentifie
     self = [super initWithCoder:coder];
     if (self) {
         __filtersManager = [FiltersManager new];
-
         [__filtersManager addObserver:self forKeyPath:NSStringFromSelector(@selector(selectedFilters))
                               options:NSKeyValueObservingOptionNew context:nil];
+        __filtersApplier = [FiltersApplier new];
+
+        __imageUploader = [TwitterImageUploader new];
     }
     return self;
 }
@@ -41,23 +48,40 @@ NSString *const UploadViewControllerIdentifier = @"UploadViewControllerIdentifie
     [__filtersManager removeObserver:self forKeyPath:NSStringFromSelector(@selector(selectedFilters))];
 }
 
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    if ([keyPath isEqualToString:NSStringFromSelector(@selector(selectedFilters))]) {
+        [self _reloadPreviewImage];
+    }
+}
+
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self _generatePreviewImage];
-    [self _reloadImage];
-
     self.tableView.delegate = self._filtersManager;
     self.tableView.dataSource = self._filtersManager;
+
+    [self _generatePreviewImage];
+    [self _reloadPreviewImage];
 }
 
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+#pragma mark - Actions
+
+- (IBAction)didTapSendButton:(id)didTapSendButton
 {
-    if ([keyPath isEqualToString:NSStringFromSelector(@selector(selectedFilters))]) {
-        [self _reloadImage];
-    }
+    WEAK_SELF
+    [ProgressHUD show:NSLocalizedString(@"Uploading...", @"Uploading...")];
+    [__imageUploader uploadImage:self.imageView.image
+                  withCompletion:^(BOOL success) {
+        if (success) {
+            [ProgressHUD showSuccess:NSLocalizedString(@"Completed", @"Completed") Interaction:YES];
+            [weakSelf.navigationController popViewControllerAnimated:YES];
+        } else {
+            [ProgressHUD showError:NSLocalizedString(@"Failed", @"Failed")];
+        }
+    }];
 }
 
 #pragma mark - 
@@ -69,36 +93,11 @@ NSString *const UploadViewControllerIdentifier = @"UploadViewControllerIdentifie
                                                               scaleIfSmaller:YES];
 }
 
-- (void)_reloadImage
+- (void)_reloadPreviewImage
 {
-    if (self._filtersManager.selectedFilters.count == 0) {
-        self.imageView.image = self._previewOriginalImage;
-        return;
-    }
-
-    NSArray *filters = self._filtersManager.selectedFilters;
-    UIImage *sourceImage = self._previewOriginalImage;
-    UIImage *filteredImage = [self _applyFilters:filters toImageImage:sourceImage];
+    UIImage *filteredImage = [self._filtersApplier applyFilters:self._filtersManager.selectedFilters
+                                                        toImage:self._previewOriginalImage];
     self.imageView.image = filteredImage;
-}
-
-- (UIImage *)_applyFilters:(NSArray *)filters toImageImage:(UIImage *)sourceImage
-{
-    CIImage *ciFilteredImage = [[CIImage alloc] initWithCGImage:sourceImage.CGImage options:nil];
-    for (CIFilter *filter in filters) {
-        [filter setValue:ciFilteredImage forKey:@"inputImage"];
-        @try {
-            ciFilteredImage = filter.outputImage;
-        }
-        @catch (NSException *e) {}
-    }
-
-    CIContext *context = [CIContext contextWithOptions:nil];
-    CGImageRef imgRef = [context createCGImage:ciFilteredImage fromRect:ciFilteredImage.extent];
-    UIImage *filteredImage = [[UIImage alloc] initWithCGImage:imgRef scale:1.0
-                                               orientation:sourceImage.imageOrientation];
-    CGImageRelease(imgRef);
-    return filteredImage;
 }
 
 @end

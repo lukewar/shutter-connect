@@ -7,3 +7,7 @@
 "Take Photo" = "Take Photo";
 "Choose existing" = "Choose existing";
 "Cancel" = "Cancel";
+
+"Uploading..." = "Uploading...";
+"Completed" = "Completed";
+"Failed" = "Failed";

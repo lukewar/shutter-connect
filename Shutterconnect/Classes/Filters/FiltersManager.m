@@ -7,6 +7,7 @@
 NSString *FilterCellIdentifier = @"FilterCellIdentifier";
 
 @interface FiltersManager ()
+@property(nonatomic, strong, readwrite) NSArray *selectedFilters;
 @property(nonatomic, strong) NSArray *_allFilters;
 @end
 

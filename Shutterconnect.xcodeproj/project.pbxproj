@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		1EDB800F1F7B8004C2BF77CF /* UploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDB89A26D4B9A9CD4199F53 /* UploadViewController.m */; };
 		1EDB8379A34CC65D806975D4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1EDB89C07928BD4E4493357A /* Localizable.strings */; };
-		1EDB85D597AAC2C3D4A7578A /* FiltersManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDB8F88ADDFDED8482B8434 /* FiltersManager.m */; };
+		1EDB8380574B31AABFE5CE79 /* TwitterImageUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDB8E274FBD06E4B9E19033 /* TwitterImageUploader.m */; };
+		1EDB8B139F2EA2A0C18E091E /* FiltersManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDB808C35ABE64A0F21712F /* FiltersManager.m */; };
+		1EDB8B6363A21695C522CB02 /* FiltersApplier.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDB86D2B29BC6F160B3EB5C /* FiltersApplier.m */; };
 		86164CB7199D44F600B3DDDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86164CB6199D44F600B3DDDD /* Foundation.framework */; };
 		86164CB9199D44F600B3DDDD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86164CB8199D44F600B3DDDD /* CoreGraphics.framework */; };
 		86164CBB199D44F600B3DDDD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86164CBA199D44F600B3DDDD /* UIKit.framework */; };
@@ -24,6 +26,7 @@
 		86164CE0199D44F600B3DDDD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86164CDE199D44F600B3DDDD /* InfoPlist.strings */; };
 		86164CE2199D44F600B3DDDD /* ShutterconnectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86164CE1199D44F600B3DDDD /* ShutterconnectTests.m */; };
 		86164CF1199D484100B3DDDD /* UploadsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86164CF0199D484100B3DDDD /* UploadsViewController.m */; };
+		86D106C9199E34F4008699F3 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D106C8199E34F4008699F3 /* Accounts.framework */; };
 		C9EA79C2D6934A048DC77BA3 /* libPods-Shutterconnect.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB574D4444F4A0980F8A51C /* libPods-Shutterconnect.a */; };
 /* End PBXBuildFile section */
 
@@ -38,11 +41,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1EDB866C072C455B28701C90 /* FiltersManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiltersManager.h; sourceTree = "<group>"; };
+		1EDB80441766CA65A1106BF9 /* ImageUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageUploader.h; sourceTree = "<group>"; };
+		1EDB808C35ABE64A0F21712F /* FiltersManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiltersManager.m; sourceTree = "<group>"; };
 		1EDB86BA8B69FF4EF69CD469 /* UploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadViewController.h; sourceTree = "<group>"; };
+		1EDB86D2B29BC6F160B3EB5C /* FiltersApplier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiltersApplier.m; sourceTree = "<group>"; };
+		1EDB87DB1C7B5B061BCC54B6 /* FiltersManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiltersManager.h; sourceTree = "<group>"; };
+		1EDB88F498D7913217C21715 /* TwitterImageUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterImageUploader.h; sourceTree = "<group>"; };
+		1EDB897701675BE72F1BC5E5 /* FiltersApplier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiltersApplier.h; sourceTree = "<group>"; };
 		1EDB89A26D4B9A9CD4199F53 /* UploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadViewController.m; sourceTree = "<group>"; };
 		1EDB89C07928BD4E4493357A /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		1EDB8F88ADDFDED8482B8434 /* FiltersManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiltersManager.m; sourceTree = "<group>"; };
+		1EDB8E274FBD06E4B9E19033 /* TwitterImageUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterImageUploader.m; sourceTree = "<group>"; };
 		2DB574D4444F4A0980F8A51C /* libPods-Shutterconnect.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Shutterconnect.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		86164CB3199D44F600B3DDDD /* Shutterconnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shutterconnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86164CB6199D44F600B3DDDD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,6 +71,7 @@
 		86164CE1199D44F600B3DDDD /* ShutterconnectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShutterconnectTests.m; sourceTree = "<group>"; };
 		86164CEF199D484100B3DDDD /* UploadsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadsViewController.h; sourceTree = "<group>"; };
 		86164CF0199D484100B3DDDD /* UploadsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadsViewController.m; sourceTree = "<group>"; };
+		86D106C8199E34F4008699F3 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		FD603AA13FFA4937B029DD90 /* Pods-Shutterconnect.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shutterconnect.xcconfig"; path = "Pods/Pods-Shutterconnect.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86D106C9199E34F4008699F3 /* Accounts.framework in Frameworks */,
 				86164CB9199D44F600B3DDDD /* CoreGraphics.framework in Frameworks */,
 				86164CBB199D44F600B3DDDD /* UIKit.framework in Frameworks */,
 				86164CB7199D44F600B3DDDD /* Foundation.framework in Frameworks */,
@@ -91,12 +101,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1EDB8A700AD6BA13F7167EA5 /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				1EDB808C35ABE64A0F21712F /* FiltersManager.m */,
+				1EDB87DB1C7B5B061BCC54B6 /* FiltersManager.h */,
+				1EDB86D2B29BC6F160B3EB5C /* FiltersApplier.m */,
+				1EDB897701675BE72F1BC5E5 /* FiltersApplier.h */,
+			);
+			path = Filters;
+			sourceTree = "<group>";
+		};
 		1EDB8C0B26A38D70673277F0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				1EDB89C07928BD4E4493357A /* Localizable.strings */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		1EDB8EC5F180B8E499201D46 /* Uploader */ = {
+			isa = PBXGroup;
+			children = (
+				1EDB88F498D7913217C21715 /* TwitterImageUploader.h */,
+				1EDB8E274FBD06E4B9E19033 /* TwitterImageUploader.m */,
+				1EDB80441766CA65A1106BF9 /* ImageUploader.h */,
+			);
+			path = Uploader;
 			sourceTree = "<group>";
 		};
 		86164CAA199D44F600B3DDDD = {
@@ -122,6 +153,7 @@
 		86164CB5199D44F600B3DDDD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				86D106C8199E34F4008699F3 /* Accounts.framework */,
 				86164CB6199D44F600B3DDDD /* Foundation.framework */,
 				86164CB8199D44F600B3DDDD /* CoreGraphics.framework */,
 				86164CBA199D44F600B3DDDD /* UIKit.framework */,
@@ -181,8 +213,8 @@
 				86164CF0199D484100B3DDDD /* UploadsViewController.m */,
 				1EDB89A26D4B9A9CD4199F53 /* UploadViewController.m */,
 				1EDB86BA8B69FF4EF69CD469 /* UploadViewController.h */,
-				1EDB8F88ADDFDED8482B8434 /* FiltersManager.m */,
-				1EDB866C072C455B28701C90 /* FiltersManager.h */,
+				1EDB8EC5F180B8E499201D46 /* Uploader */,
+				1EDB8A700AD6BA13F7167EA5 /* Filters */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -252,8 +284,6 @@
 			mainGroup = 86164CAA199D44F600B3DDDD;
 			productRefGroup = 86164CB4199D44F600B3DDDD /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-			);
 			projectRoot = "";
 			targets = (
 				86164CB2199D44F600B3DDDD /* Shutterconnect */,
@@ -326,7 +356,9 @@
 				86164CC3199D44F600B3DDDD /* main.m in Sources */,
 				86164CF1199D484100B3DDDD /* UploadsViewController.m in Sources */,
 				1EDB800F1F7B8004C2BF77CF /* UploadViewController.m in Sources */,
-				1EDB85D597AAC2C3D4A7578A /* FiltersManager.m in Sources */,
+				1EDB8380574B31AABFE5CE79 /* TwitterImageUploader.m in Sources */,
+				1EDB8B139F2EA2A0C18E091E /* FiltersManager.m in Sources */,
+				1EDB8B6363A21695C522CB02 /* FiltersApplier.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,6 +565,7 @@
 				86164CE7199D44F600B3DDDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		86164CE8199D44F600B3DDDD /* Build configuration list for PBXNativeTarget "ShutterconnectTests" */ = {
 			isa = XCConfigurationList;
@@ -541,6 +574,7 @@
 				86164CEA199D44F600B3DDDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
