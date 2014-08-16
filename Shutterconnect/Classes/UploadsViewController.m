@@ -11,7 +11,10 @@
 
 @interface UploadsViewController () <UploadViewControllerDelegate>
 
+@property(nonatomic, strong) IBOutlet UILabel *noUploadsLabel;
+
 @property(nonatomic, strong) ImagesStorage *_imagesStorage;
+
 @end
 
 @implementation UploadsViewController
@@ -26,6 +29,16 @@
     return self;
 }
 
+#pragma mark - View
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    [self _toggleEmptyHistoryView];
+}
+
+#pragma - Collection View
+
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     return self._imagesStorage.storedImages.count;
@@ -33,7 +46,8 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    ImageCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ImageCellIdentifier" forIndexPath:indexPath];
+    ImageCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ImageCellIdentifier"
+                                                                              forIndexPath:indexPath];
     cell.imageView.image = self._imagesStorage.storedImages[(NSUInteger) indexPath.item];
     return cell;
 }
@@ -68,15 +82,24 @@
 
 - (void)uploadViewController:(UploadViewController *)viewController didUploadImage:(UIImage *)image
 {
-    UIImage *thumbnailImage = [image resizedImageToFitInSize:CGSizeMake(image.size.width/10, image.size.height/10) scaleIfSmaller:YES];
+    UIImage *thumbnailImage = [image resizedImageToFitInSize:CGSizeMake(image.size.width / 10, image.size.height / 10)
+                                              scaleIfSmaller:YES];
     [self._imagesStorage addImage:thumbnailImage];
     [self.collectionView reloadData];
+    [self _toggleEmptyHistoryView];
     [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)uploadViewControllerDidCancel:(UploadViewController *)viewController
 {
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+#pragma mark -
+
+- (void)_toggleEmptyHistoryView
+{
+    self.noUploadsLabel.hidden = self._imagesStorage.storedImages.count != 0;
 }
 
 @end
