@@ -61,7 +61,7 @@
             </objects>
             <point key="canvasLocation" x="-768" y="-837"/>
         </scene>
-        <!--Upload View Controller - Filter & send-->
+        <!--Upload View Controller - Filter & Send-->
         <scene sceneID="anL-N3-i3f">
             <objects>
                 <viewController storyboardIdentifier="UploadViewControllerIdentifier" id="8wq-ex-MJD" customClass="UploadViewController" sceneMemberID="viewController">
@@ -107,8 +107,8 @@
                             <constraint firstItem="crR-kV-Zvf" firstAttribute="top" secondItem="eYr-13-w2J" secondAttribute="bottom" id="d0B-RD-Dd2"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Filter &amp; send" id="5bd-50-FRu">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="4SZ-1b-IHP">
+                    <navigationItem key="navigationItem" title="Filter &amp; Send" id="5bd-50-FRu">
+                        <barButtonItem key="rightBarButtonItem" title="Send" id="4SZ-1b-IHP">
                             <connections>
                                 <action selector="didTapSendButton:" destination="8wq-ex-MJD" id="H9W-fW-QZt"/>
                             </connections>
